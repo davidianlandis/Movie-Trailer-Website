@@ -37,8 +37,7 @@ $(function(){
 		
 	});
 	
-	/* close the video of the user closes the modal */
-	$('.hanging-close').click(function(){$('.movie-data').empty();});
-	
-	/* introduce the layout of box arts */
+	/* close the video if the user closes the modal */
+	$('#movie-info').on('hidden.bs.modal', function () {$('#movie-trailer').empty();})
+
 });
