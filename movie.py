@@ -21,4 +21,4 @@ class Movie():
             self.data["youtubeID"] = self.youtubeID #provided by me
         except ValueError, e:
             #set this same data point to false if we get no JSON so the program can handle it
-            self.data["Response"] = "False="+str(e)
+            self.data["Response"] = "False"
