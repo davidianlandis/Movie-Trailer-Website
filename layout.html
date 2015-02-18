@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8"/>
+<title>{title_for_layout}</title>
+<!-- cdn css -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+<!-- custom css -->
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<!--modal div-->
+	<div class="modal" id="movie-info">
+		<div class="modal-dialog">
+			<a class="hanging-close" data-dismiss="modal" aria-hidden="true">
+				<img src="https://lh5.ggpht.com/v4-628SilF0HtHuHdu5EzxD7WRqOrrTIDi_MhEG6_qkNtUK5Wg7KPkofp_VJoF7RS2LhxwEFCO1ICHZlc-o_=s0#w=24&h=24"/>
+			</a>
+			<div id="imdb-info">
+				IMDB Rating: <span class="movie-data" id="imdb-rating">imdb rating here</span>/10 |
+				<a href="" id="imdb-url" target="_blank">view on IMDB</a>
+			</div>
+			<div class="content">
+				<div class="movie-data" id="movie-box-art"></div>
+				<div id="movie-description">
+					<h3 class="movie-data" id="movie-title">movie title goes here</h3>
+					Released: <span class="movie-data" id="movie-year">year</span>
+					Rated: <span class="movie-data" id="movie-rated">rated</span>
+					Runtime: <span class="movie-data" id="movie-runtime">time</span>
+					<br/>
+					Actors: <span class="movie-data" id="movie-actors">actors</span>
+					<div class="movie-data" id="movie-synopsis">Description of movie goes here.</div>
+				</div>
+			</div>
+			<div class="movie-data" id="movie-trailer">
+			iframe of movie goes here
+			</div>
+		</div>
+	</div>
+	
+	<!-- content -->
+	<div class="container" id="navbar-container">
+		<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">I like your nurse's uniform, guy.</a>
+					<p class="navbar-text">according to most people, some movies are better than other movies. here are some crappy movies that i enjoy.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="container" id="main-content">
+		<div class="container">
+		{movie_tiles}
+		</div>
+		<!--
+		<div class="container">
+			<div class="movie-tile col-md-6 col-lg-4 text-center" data-imdb-id="tt0128445" data-imdb-rating="7.7" data-movie-year="1998" data-movie-runtime="93 min" data-movie-rating="R" data-movie-actors="Jason, Bill. and others" data-trailer-youtube-id="GxCNDpvGyss" data-movie-box-art-url="http://upload.wikimedia.org/wikipedia/en/thumb/4/42/Rushmoreposter.png/220px-Rushmoreposter.png" data-movie-synopsis="Eccentric high school student kicks it with a rich depressed Bill Murray who is totes into the same woman" data-toggle="modal" data-target="#movie-info">
+				<img src="http://upload.wikimedia.org/wikipedia/en/thumb/4/42/Rushmoreposter.png/220px-Rushmoreposter.png" width="220" height="342">
+				<h2>Rushmore</h2>
+			</div>
+		</div>
+		-->
+	</div>
+
+
+</body>
+<!-- cdn js -->
+<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<!-- custom js -->
+<script src="movies.js"></script>
+</html>
